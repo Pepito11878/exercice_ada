@@ -9,4 +9,3 @@ const books = [
 
 // je recup tout les livres dont l'auteur est Alice Martin puis je les affiche dans la console
 books.filter(books => books.author === "Alice Martin").forEach(books => console.log(books.title))
-
