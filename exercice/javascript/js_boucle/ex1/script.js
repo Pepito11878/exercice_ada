@@ -18,6 +18,6 @@
 // }
 
 // 5
-// for(i = 49; i > 0; i--){
-//     console.log(i)
-// }
+for(i = 49; i > 0; i--){
+    console.log(i)
+}
