@@ -7,8 +7,9 @@ switch (true) {
   case number < 0:
     console.log("Vous avez rentrez un nombre inferieur a 0");
     break;
-}
-
-for(i = number; i > -1; i--){
-    console.log(i)
+  default:
+    for (i = number; i > -1; i--) {
+      console.log(i);
+    }
+    break;
 }
