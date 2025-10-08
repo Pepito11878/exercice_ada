@@ -113,4 +113,3 @@ authorList()
 
 // Grouper les livres par genre
 
-let vari;
