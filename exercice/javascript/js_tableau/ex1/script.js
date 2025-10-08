@@ -55,7 +55,7 @@ const books = [
   },
 ];
 
-// je recupère tout les livres dont l'auteur est Alice Martin puis je les affiche dans la console
+// recuperer tout les livres d'un auteur
 function searchBooksByAuthor(author) {
   for (i = 0; i < books.length; i++) {
     if (books[i].author == author) {
@@ -70,7 +70,7 @@ searchBooksByAuthor("Alice Martin");
 function moyennePageGenre(genre) {
   let moyenne = 0;
   let nb = 0;
-  for (let i = 0; i < books.length; i++) {
+  for (i = 0; i < books.length; i++) {
     if (books[i].genre == genre) {
       moyenne += books[i].pages;
       nb++;
@@ -88,13 +88,13 @@ function moreRecentBooks() {
   let temp = 0;
   let result;
 
-  for (let i = 0; i < books.length; i++) {
+  for (i = 0; i < books.length; i++) {
     if (books[i].year > temp) {
       temp = books[i].year;
       result = books[i].title;
     }
   }
-  console.log(result);
+  console.log(result, temp);
 }
 
 moreRecentBooks();
