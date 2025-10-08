@@ -12,5 +12,5 @@ total = total + price3
 console.log("Le prix total avant reduction est de : ", total)
 
 //Nous appliquons 20% de reduction
-const tot2 = total * (1 - 20 / 100); //calcul de -20% au total
-console.log("Le prix total après reduction est de : ", tot2)
+const total2 = total * (1 - 20 / 100); //calcul de -20% au total
+console.log("Le prix total après reduction est de : ", total2)
