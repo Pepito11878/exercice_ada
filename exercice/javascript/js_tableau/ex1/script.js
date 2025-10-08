@@ -7,5 +7,7 @@ const books = [
     { id: 6, title: "Modern Painting", author: "Emma Laurent", year: 2020, pages: 190, genre: "art", rating: 3.9 }
 ];
 
-// je recup tout les livres dont l'auteur est Alice Martin puis je les affiche dans la console
+// je recupère tout les livres dont l'auteur est Alice Martin puis je les affiche dans la console
 books.filter(books => books.author === "Alice Martin").forEach(books => console.log(books.title))
+
+//moyenne des pages de livres par genre
