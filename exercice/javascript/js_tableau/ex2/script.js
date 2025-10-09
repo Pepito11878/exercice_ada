@@ -96,9 +96,7 @@ function findBestStudentMoyenne(){
     for(const id in students){
         const student = students[id];
         const name = student.name;
-        let moyenne = 0;
-        let nb = 0;
-        let total = 0
+        
         
         
     }
