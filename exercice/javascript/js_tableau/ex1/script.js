@@ -113,3 +113,13 @@ authorList()
 
 // Grouper les livres par genre
 
+function booksByGenre(genre){
+  for(i = 0; i < books.length; i++){
+    if(books[i].genre == (genre)){
+      console.log(books[i].title)
+    }
+  }
+}
+
+// booksByGenre("programming")
+booksByGenre("art")
