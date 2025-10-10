@@ -68,15 +68,15 @@ searchBooksByAuthor("Alice Martin");
 
 // moyenne des pages de livres par genre
 function moyennePageGenre(genre) {
-  let moyenne = 0;
+  let somme = 0;
   let nb = 0;
   for (i = 0; i < books.length; i++) {
     if (books[i].genre == genre) {
-      moyenne += books[i].pages;
+      somme += books[i].pages;
       nb++;
     }
   }
-  console.log(moyenne / nb);
+  console.log(somme / nb);
 }
 
 moyennePageGenre("programming");
@@ -85,16 +85,16 @@ moyennePageGenre("art");
 // Trouver le livre le plus recent
 
 function moreRecentBooks() {
-  let temp = 0;
-  let result;
+  let year = 0;
+  let title;
 
   for (i = 0; i < books.length; i++) {
     if (books[i].year > temp) {
-      temp = books[i].year;
-      result = books[i].title;
+      year = books[i].year;
+      title = books[i].title;
     }
   }
-  console.log(result, temp);
+  console.log(title, year);
 }
 
 moreRecentBooks();
@@ -106,20 +106,20 @@ function authorList() {
   for (i = 0; i < books.length; i++) {
     list.push(books[i].author);
   }
-  console.log(list);
+  return list
 }
 
-authorList()
+console.log(authorList())
 
 // Grouper les livres par genre
 
-function booksByGenre(genre){
-  for(i = 0; i < books.length; i++){
-    if(books[i].genre == (genre)){
-      console.log(books[i].title)
+function booksByGenre(genre) {
+  for (i = 0; i < books.length; i++) {
+    if (books[i].genre == genre) {
+      console.log(books[i].title);
     }
   }
 }
 
 // booksByGenre("programming")
-booksByGenre("art")
+booksByGenre("art");
