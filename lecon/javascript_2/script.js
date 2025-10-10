@@ -9,11 +9,10 @@ myButton.addEventListener("click", function () {
   myButton.innerText = "Bouton changer !";
 });
 
-// 
+//
 
-const myButton2 = document.querySelector(".bouton-2")
+const myButton2 = document.querySelector(".bouton-2");
 
-myButton2.addEventListener("click", function() {
-    myButton2.innerHTML = "<b>Html changer !</b>"
-})
-
+myButton2.addEventListener("click", function () {
+  myButton2.innerHTML = "<b>Html changer !</b>";
+});
