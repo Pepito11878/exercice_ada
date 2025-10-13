@@ -76,8 +76,8 @@ function moyennePageGenre(genre) {
       nb++;
     }
   }
-  console.log(somme / nb);
-}
+  console.log(`${genre}: ${somme / nb}`);
+} 
 
 moyennePageGenre("programming");
 moyennePageGenre("art");
@@ -89,7 +89,7 @@ function moreRecentBooks() {
   let title;
 
   for (i = 0; i < books.length; i++) {
-    if (books[i].year > temp) {
+    if (books[i].year > year) {
       year = books[i].year;
       title = books[i].title;
     }
