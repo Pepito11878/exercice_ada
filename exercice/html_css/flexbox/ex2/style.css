@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 10rem;
+    background-color: grey;
+    margin: 1rem;
+}
+
+main{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.first-container{
+    padding: 22rem;
+    background-color: grey;
+}
+
+.second-container{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.second-container-header{
+    background-color: grey;
+    height: 5rem;
+}
+
+.content{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.content .element1, .element2, .element3, .element4{
+    padding: 8rem;
+}
+
+.element1{
+    background-color: aquamarine;
+}
+
+.element2{
+    background-color: aquamarine;
+}
+
+.element3{
+    background-color: aquamarine;
+}
+
+.element4{
+    background-color: aquamarine;
+}
+
