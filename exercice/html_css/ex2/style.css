@@ -1,11 +1,11 @@
-body{
-    background-color: pink;
-    color: hotpink;
-    font-family: 'Comic Sans MS', cursive;
-    text-align: center;
+body {
+  background-color: pink;
+  color: hotpink;
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
 }
 
-img{
-    border: 5px solid hotpink;
-    border-radius: 100%;
+img {
+  border: 5px solid hotpink;
+  border-radius: 100%;
 }
