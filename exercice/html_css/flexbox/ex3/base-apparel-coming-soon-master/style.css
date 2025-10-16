@@ -31,7 +31,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   width: 120vh;
-  padding: 7vh 0 5rem 20rem;
+  padding: 7vh 0 5rem 20vh;
 }
 
 .logo {
@@ -93,7 +93,7 @@ main p {
 
 .submit {
   padding: 1rem 3rem;
-  transform: translateX(-50%) translateY(5%);
+  transform: translateX(-50%) translateY(7%);
   border: none;
   border-radius: 100vh;
   text-align: center;
