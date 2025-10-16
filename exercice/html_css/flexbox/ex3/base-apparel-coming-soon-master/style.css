@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -16,73 +8,63 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-}
-
-.flex-container {
-  display: flex;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* met le logo en haut et le reste centré */
-  background: url(images/bg-pattern-desktop.svg),
-    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 120vh;
-  padding: 7vh 0 5rem 20vh;
-}
-
-.logo {
-  height: 33px;
-  width: 158px;
+  background: hsl(0, 100%, 98%);
 }
 
 main h1 {
-  letter-spacing: 20px;
+  letter-spacing: 15px;
+  text-align: center;
+  font-size: 2.7rem;
+  margin-top: 4rem;
 }
 
 main .top {
   font-weight: 300;
-  font-size: 2.7em;
   text-transform: uppercase;
   color: hsl(0, 36%, 70%);
 }
 
 main .bottom {
   text-transform: uppercase;
-  font-size: 2.7em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
-main p {
-  color: hsl(0, 36%, 70%);
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  line-height: 2;
-}
-
-.right {
-  background: url(images/hero-desktop.jpg);
-  height: 100vh;
-  width: 100vh;
+.img-mobile {
+  background: url(images/hero-mobile.jpg);
+  height: 250px;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.main-content {
+header {
+  padding: 2rem;
+  width: 100vw;
+  background: white;
+}
+
+.logo{
+  height: 1.4rem;
+}
+
+.paragraphe {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.5;
+  text-align: center;
+  max-width: 100vw;
+  margin: 1rem 1rem 3rem 1rem;
+}
+
+.flex-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* centre verticalement */
-  flex: 1; /* occupe l’espace restant */
+  flex-direction: column-reverse;
 }
 
 #email-input {
-  padding: 1.2rem 15rem 1.2rem 1.2rem;
+  padding: 1.2rem 10rem 1.2rem 1.2rem;
   border: 1px solid rgba(206, 151, 151, 0.5);
   border-radius: 100vh;
-  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background: hsl(0, 100%, 98%);
 }
 
 #email-input::placeholder {
@@ -91,18 +73,28 @@ main p {
   padding-left: 10px;
 }
 
-.submit {
-  padding: 1rem 3rem;
-  transform: translateX(-50%) translateY(7%);
-  border: none;
-  border-radius: 100vh;
-  text-align: center;
-  font-size: large;
-  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  cursor: pointer;
-  box-shadow: 0px 15px 15px rgba(206, 151, 151, 0.5);
+.main-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.submit:hover {
-  background: hsl(0, 80%, 86%);
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.submit {
+  position: absolute;
+  padding: 1.1rem 2rem;
+  right: 0.5rem;
+  border: none;
+  border-radius: 100vh;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));;
+  cursor: pointer;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
