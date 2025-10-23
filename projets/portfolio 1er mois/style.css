@@ -259,7 +259,8 @@ h2 {
 }
 
 .youtube:hover{
-    background: #ff0000;
+    background: #fff;
+    color: #CD201F;
 }
 
 .mail:hover{
