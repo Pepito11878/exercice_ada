@@ -4,6 +4,6 @@ const variable = 0;
 
 if (variable >= 0) {
   alert(`${variable} est positif`);
-} else {
+} else if(variable < 0){
   alert(`${variable} est négatif`);
 }

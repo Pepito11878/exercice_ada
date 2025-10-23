@@ -57,7 +57,7 @@ const books = [
 
 // recuperer tout les livres d'un auteur
 function searchBooksByAuthor(author) {
-  for (i = 0; i < books.length; i++) {
+  for (let i = 0; i < books.length; i++) {
     if (books[i].author == author) {
       console.log(books[i].title);
     }
@@ -70,7 +70,7 @@ searchBooksByAuthor("Alice Martin");
 function moyennePageGenre(genre) {
   let somme = 0;
   let nb = 0;
-  for (i = 0; i < books.length; i++) {
+  for (let i = 0; i < books.length; i++) {
     if (books[i].genre == genre) {
       somme += books[i].pages;
       nb++;
@@ -88,7 +88,7 @@ function moreRecentBooks() {
   let year = 0;
   let title;
 
-  for (i = 0; i < books.length; i++) {
+  for (let i = 0; i < books.length; i++) {
     if (books[i].year > year) {
       year = books[i].year;
       title = books[i].title;
@@ -103,23 +103,26 @@ moreRecentBooks();
 
 function authorList() {
   let list = [];
-  for (i = 0; i < books.length; i++) {
+  for (let i = 0; i < books.length; i++) {
     list.push(books[i].author);
   }
-  return list
+  return list;
 }
 
 console.log(authorList());
 
 // Grouper les livres par genre
 
-function booksByGenre(genre) {
-  for (i = 0; i < books.length; i++) {
-    if (books[i].genre == genre) {
-      console.log(books[i].title);
-    }
+function groupBooksByGenre() {
+  const groups = {};
+
+  for (const b of books) {
+    if (!groups[b.genre]) groups[b.genre] = [];
+
+    groups[b.genre].push(b);
   }
+
+  return groups;
 }
 
-// booksByGenre("programming")
-booksByGenre("art");
+console.log("Grouped by genre:", groupBooksByGenre());
