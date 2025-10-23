@@ -89,17 +89,3 @@ function searchByMajor(filiere){
 searchByMajor("Computer Science")
 searchByMajor("Mathematics")
 searchByMajor("Physics")
-
-// Identifier l'étudiante avec la meilleure moyenne
-
-function findBestStudentMoyenne(){
-    for(const id in students){
-        const student = students[id];
-        const name = student.name;
-        
-        
-        
-    }
-}
-
-findBestStudentMoyenne()

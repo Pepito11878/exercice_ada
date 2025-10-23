@@ -77,7 +77,7 @@ function moyennePageGenre(genre) {
     }
   }
   console.log(`${genre}: ${somme / nb}`);
-} 
+}
 
 moyennePageGenre("programming");
 moyennePageGenre("art");
@@ -109,7 +109,7 @@ function authorList() {
   return list
 }
 
-console.log(authorList())
+console.log(authorList());
 
 // Grouper les livres par genre
 
