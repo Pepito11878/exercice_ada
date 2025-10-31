@@ -1,13 +1,18 @@
-import React from "react"
+import React from "react";
 
-type VideoProps = {
-    id: String
-}
+type VideoProps = { id: string };
 
-export const video : React.FC<VideoProps> = ({id}) => {
-    return(
-        <div>
-            <iframe width="560" height="315" src={"https://www.youtube.com/embed/" + id} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        </div>
-    )
-}
+export const YoutubeVideo: React.FC<VideoProps> = ({ id }) => {
+  return (
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src={"https://www.youtube.com/embed/" + id}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
