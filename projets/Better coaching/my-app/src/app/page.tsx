@@ -1,9 +1,14 @@
-import { YoutubeVideo } from "@/components/YoutubeVideo";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
-    <main>
-      <div>Hello world!</div>
-    </main>
+    <div>
+      <Header />
+
+      {/* Main */}
+
+      <Footer />
+    </div>
   );
 }
