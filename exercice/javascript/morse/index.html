@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Parlez vous le morse</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="translate">
+          <header><h1>Parlez-vous le morse ?</h1></header>
+          <div class="input-translate">
+            <div class="input">
+              <label for="text"
+                ><p>
+                  Votre élément à traduire (200 caractères maximum) :
+                </p></label
+              >
+              <br />
+              <input
+                type="text"
+                id="text"
+                value=""
+                name="text"
+                required
+                minlength="4"
+                maxlength="200"
+                size="50"
+                placeholder="Que souhaitez-vous traduire ?"
+              />
+            </div>
+            <div class="container-btn">
+              <button class="latin-morse" disabled>
+                <p>Traduire en morse</p>
+              </button>
+              <button class="morse-latin" disabled>
+                <p>Traduire en latin</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="result"><p>Votre résultat apparaîtra ici</p></div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js" defer></script>
+</html>
