@@ -16,7 +16,7 @@ console.log(number);
 
 // 4
 for (let i = 0; i < data.length; i++) {
-  if (i === 4) {
+  if (data[i].ranking === 4) {
     console.log(data[i]);
   }
 }
