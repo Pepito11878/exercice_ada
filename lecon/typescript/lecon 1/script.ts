@@ -12,7 +12,7 @@ const students: Student[] = [
   },
   {
     name: "Herminoe",
-    favoriteSpell: "levisoa",
+    favoriteSpell: "leviosa",
     magicLevel: "5",
   },
   {
