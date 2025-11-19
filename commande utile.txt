@@ -1,1 +1,0 @@
- si probleme avec react-icons npm install --save-dev typescript@5.6
