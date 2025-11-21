@@ -45,4 +45,27 @@ function isPalindrome(dateString) {
   return digitsOnly === reversed;
 }
 
-console.log(isPalindrome("11/11/1111"))
+console.log(isPalindrome("11/11/1111"));
+
+function getNextPalindrom(count) {
+  let arrayPalindrome = [];
+
+  let currentDay = new Date();
+
+  while (arrayPalindrome.length < count) {
+    currentDay.setDate(currentDay.getDate() + 1);
+
+    const day = String(currentDay.getDate()).padStart(2, "0");
+    const month = String(currentDay.getMonth() + 1).padStart(2, "0");
+    const year = currentDay.getFullYear();
+
+    const currentDayString = `${day}/${month}/${year}`;
+
+    if (isPalindrome(currentDayString)) {
+      arrayPalindrome.push(currentDayString);
+    }
+  }
+  return arrayPalindrome;
+}
+
+console.log(getNextPalindrom(3))
