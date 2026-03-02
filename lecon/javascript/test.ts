@@ -27,7 +27,3 @@ class Reply {
     this.text = text
   }
 }
-
-const post = new Post("Titre", "text")
-
-console.log(post)
